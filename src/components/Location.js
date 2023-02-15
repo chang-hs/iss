@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Location.css"
 import {useRef, useEffect} from 'react';
-import worldMap from './world_map.png';
+import worldMap from '../images/world_map.png';
 
 function Location (props) {
 	const img = new Image();
