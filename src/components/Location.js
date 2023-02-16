@@ -1,11 +1,10 @@
 import React from 'react';
 import "./Location.css"
 import {useRef, useEffect} from 'react';
-import worldMap from '../images/world_map.png';
 
 function Location (props) {
 	const img = new Image();
-	img.src = worldMap;
+	img.src = require('../images/world_map.png');
 	const longitude = parseFloat(props.longitude);
 	const latitude = parseFloat(props.latitude);
 	const canvasWidth = props.canvasWidth;
@@ -24,7 +23,6 @@ function Location (props) {
 		const ctx = canvas.getContext('2d');
 		ctx.fillStyle = "#00ffff";
 		ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, canvasWidth, canvasHeight);
-		// ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 		drawCircle(ctx, longitude, latitude);
 	});
 	return(

@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     return(
       <div className='tc' id="main_title">
-        <h1 className='f1 tc yellow'>The Location of the International Satellite</h1>
+        <h1 className='f1 tc yellow'>The Location of the International Space Station</h1>
         <Location longitude={this.state.longitude} latitude={this.state.latitude} 
                   canvasWidth={this.state.canvasWidth} canvasHeight={this.state.canvasHeight} />
       </div>
