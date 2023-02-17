@@ -1,6 +1,7 @@
 {
   "name": "iss",
   "version": "0.1.0",
+  "homepage": "http://chang-hs.github.io/iss",
   "private": true,
   "dependencies": {
     "@syncfusion/ej2-maps": "^20.4.49",

@@ -4,10 +4,8 @@ import {useRef, useEffect} from 'react';
 import worldMap from "../images/world_map.png";
 
 function Location (props) {
-	console.log(worldMap);
 	const img = new Image();
 	img.src = worldMap;
-	console.log(img);
 	const longitude = parseFloat(props.longitude);
 	const latitude = parseFloat(props.latitude);
 	const canvasWidth = props.canvasWidth;
